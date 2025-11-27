@@ -5,15 +5,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.space-body {
-    min-height: 100vh;
-    margin: 0;
-    background: radial-gradient(circle at top, #0a0a23, #000);
-    font-family: "Roboto", sans-serif;
-    overflow-x: hidden;
-    position: relative;
-    color: #fff;
-}
+
 
 
 .space-body {
@@ -21,13 +13,14 @@ body {
     position: relative;
     color: #fff;
     background: radial-gradient(circle at bottom, #0a0a1a 0%, #000 100%);
-    overflow: hidden; 
+
+
 }
 
 
 .app-footer {
-    position: fixed;
-    left: 0;
+
+   left: 0;
     bottom: 0;
     width: 100%;
     background: rgba(0, 20, 60, 0.8);
