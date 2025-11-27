@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Página básica en HTML5 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NASA APOD Explorer</title>
+  <!-- Bootstrap para estilos bonitos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+  <!-- Encabezado arriba -->
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">🌌 NASA APOD Explorer</a>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Parte izquierda: muestra la imagen -->
+      <div class="col-lg-8 mb-4">
+        <div class="card bg-secondary text-light">
+          <div class="card-body">
+            <h3 id="apod-title"></h3> <!-- título -->
+            <p id="apod-date"></p> <!-- fecha -->
+            <div id="apod-media" class="text-center mb-3"></div> <!-- imagen o video -->
+            <p id="apod-explanation"></p> <!-- explicación -->
+            <button id="btn-favorite" class="btn btn-warning">⭐ Guardar en Favoritos</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parte derecha: buscador y favoritos -->
+      <div class="col-lg-4">
+        <!-- Buscar por fecha -->
+        <div class="card bg-secondary text-light mb-4">
+          <div class="card-body">
+            <h5>Buscar por Fecha</h5>
+            <input type="date" id="date-input" class="form-control mb-2">
+            <button id="btn-search" class="btn btn-info w-100">🔍 Buscar</button>
+          </div>
+        </div>
+
+        <!-- Lista de favoritos -->
+        <div class="card bg-secondary text-light">
+          <div class="card-body">
+            <h5>⭐ Favoritos</h5>
+            <ul id="favorites-list" class="list-group">
+              <!-- Aquí se agregan los favoritos -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-primary text-center text-light py-3 mt-4">
+    <p>Juan Felipe Gonzalez, Samary Cardozo, Alvaro Daniel Hernandez, Alberto Cortés Palacios | NASA APOD API</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Tu JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
