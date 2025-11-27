@@ -1,0 +1,34 @@
+body {
+    padding-bottom: 90px; 
+}
+
+.space-body {
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at top, #0a0a23, #000);
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    color: #fff;
+}
+
+
+.app-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 20, 60, 0.8);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 -3px 15px rgba(0, 120, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+}
+
+
+.app-footer p {
+    margin: 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 5px #6ac7ff;
+}
