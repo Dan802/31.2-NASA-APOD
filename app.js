@@ -1,6 +1,7 @@
-window.onload = function () {
+window.addEventListener("DOMContentLoaded", () => {
     obtenerAPOD();
-};
+});
+
 function obtenerAPOD(fecha = "") {
     let url = `https://api.nasa.gov/planetary/apod?api_key=dpxWyqyYGrYomyUy3vjyjpD7NzV7jkRdfDf90OaE&date=${fecha}`;
 
@@ -9,7 +10,6 @@ function obtenerAPOD(fecha = "") {
         .then(data => mostrarAPOD(data))
         .catch(err => console.error("Error:", err));
 }
-
 
 function mostrarAPOD(data) {
     document.getElementById("titulo").textContent = data.title;
@@ -20,8 +20,15 @@ function mostrarAPOD(data) {
     mediaDiv.innerHTML = "";
 
     if (data.media_type === "image") {
-        mediaDiv.innerHTML = `<img src="${data.url}" width="400">`;
+        mediaDiv.innerHTML = `<img src="${data.url}" width="400px">`;
     }
+
+    const btnFavoritos = document.getElementById("btn-favorite")
+    btnFavoritos.setAttribute("data-date", data.date)
+    btnFavoritos.setAttribute("data-title", data.title)
+    btnFavoritos.setAttribute("data-url", data.url)
+    btnFavoritos.setAttribute("data-explanation", data.explanation)
+
 }
 
 document.getElementById("btn-search").addEventListener("click", () => {
