@@ -40,7 +40,7 @@ export const mostrarFavoritos = () => {
 
     favoritos.forEach((item) => {
         contenedor.innerHTML += `
-        <li class="list-group-item bg-secondary text-light d-flex justify-content-between align-items-center border-light rounded mb-3" style="border-top-width: 1px;">
+        <li class="list-group-item bg-azull text-light d-flex justify-content-between align-items-center border-light rounded mb-3" style="border-top-width: 1px;">
             <div><p class="mb-1 fw-bold" style="cursor: pointer" data-date="${item.date}">${item.date}</p></div>
             <img 
                 src="${item.url}" 

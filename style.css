@@ -5,21 +5,14 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-
-
-
 .space-body {
     min-height: 100vh;
     position: relative;
     color: #fff;
     background: radial-gradient(circle at bottom, #0a0a1a 0%, #000 100%);
-
-
 }
 
-
 .app-footer {
-
    left: 0;
     bottom: 0;
     width: 100%;
@@ -125,4 +118,13 @@ body {
     font-weight: bold;
     font-size: 1.4rem;
     text-shadow: 0 0 8px #5d2669;
+}
+
+div.bg-secondary {
+    background-color: #293256 !important;
+}
+
+.bg-azull {
+    background-color: #4b557d !important;
+
 }
