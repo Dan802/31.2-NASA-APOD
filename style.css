@@ -41,11 +41,11 @@ body {
     margin: 0;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
-    text-shadow: 0 0 5px #6ac7ff;
+    text-shadow: 0 0 5px #211274;
 }
 
 
-/* Capa base para fondo  */
+/* Capa base que se usa para fondo  */
 .space {
     position: absolute;
     top: 0;
@@ -93,7 +93,7 @@ body {
         radial-gradient(2.5px 2.5px at 95px 145px, #fff, transparent);
 }
 
-/* Animación */
+/* capa para animar */
 @keyframes space-rotate {
     40% { opacity: 0.75; }
     50% { opacity: 0.25; }
@@ -108,7 +108,7 @@ body {
     width: 100%;
     background: rgba(0, 20, 60, 0.8);
     backdrop-filter: blur(6px);
-    box-shadow: 0 -3px 15px rgba(0, 120, 255, 0.3);
+    box-shadow: 0 -3px 15px rgba(24, 57, 149, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     z-index: 1000;
 }
@@ -118,5 +118,18 @@ body {
     margin: 0;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
-    text-shadow: 0 0 5px #6ac7ff;
+    text-shadow: 0 0 5px #132da1;
+}
+
+.app-navbar {
+    background: rgba(0, 10, 40, 0.8) !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 140, 255, 0.4);
+    box-shadow: 0 0 15px rgba(11, 55, 116, 0.4);
+}
+
+.app-navbar-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 0 0 8px #5d2669;
 }
